@@ -13,14 +13,15 @@ body, html {
 
 #container {
     text-align: center;
+    width: 100%;
 }
 
 h1 {
-    font-size: 4em; /* Diminuído para caber melhor */
+    font-size: 4em; 
     margin-bottom: 20px;
-    margin-top: 30px; /* Coloca o "Coming soon" mais acima */
-    width: 100%; /* Largura de 90% do terminal */
-    white-space: nowrap; /* Mantém o texto em uma única linha */
+    margin-top: 30px;
+    width: 100%; 
+    white-space: nowrap;
 }
 
 #terminal {
@@ -40,6 +41,7 @@ h1 {
 
 #output {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #log {
@@ -60,4 +62,25 @@ h1 {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em; /* Reduz o tamanho do texto em telas menores */
+    }
+
+    #terminal {
+        height: 200px; /* Reduz a altura do terminal em celulares */
+        padding: 15px;
+        font-size: 0.8em; /* Diminui a fonte no terminal */
+    }
+
+    #cursor {
+        font-size: 1.5em; /* Ajusta o tamanho do cursor para telas menores */
+    }
+
+    #output {
+        flex-direction: column; /* Ajusta a saída para não quebrar em telas menores */
+    }
 }
