@@ -1,5 +1,5 @@
 // Variáveis globais para os sobrenomes e elementos do DOM
-const surnames = ["Alves de Sousa", "Viardo", "Saraiva", "Vidal de Lima", "Silva Caldas"];
+const surnames = [" Alves de Sousa", " Viardo", " Saraiva", " Vidal de Lima", " Silva Caldas"];
 const output = document.getElementById('output');
 const log = document.getElementById('log');
 const command = document.getElementById('command');
