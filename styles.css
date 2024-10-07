@@ -6,22 +6,43 @@ body, html {
     align-items: center;
     height: 100vh;
     background: #333;
-    font-family: 'Bungee', sans-serif;
+    font-family: monospace; /* Fonte simples, estilo máquina de escrever */
     color: white;
     overflow: hidden;
 }
 
 #container {
     text-align: center;
-    width: 100%;
 }
 
-h1 {
-    font-size: 4em; 
+nav {
+    width: 100%;
+    background-color: #333;
     margin-bottom: 20px;
-    margin-top: 30px;
-    width: 100%; 
-    white-space: nowrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: monospace; /* Fonte estilo máquina de escrever */
+    font-size: 1em; /* Tamanho padrão, simples */
+}
+
+nav ul li a:hover {
+    color: #00FF00; /* Cor de destaque ao passar o mouse */
 }
 
 #terminal {
@@ -41,7 +62,6 @@ h1 {
 
 #output {
     display: flex;
-    flex-wrap: wrap;
 }
 
 #log {
@@ -62,25 +82,4 @@ h1 {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
-}
-
-/* Ajustes para telas menores */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2.5em; /* Reduz o tamanho do texto em telas menores */
-    }
-
-    #terminal {
-        height: 200px; /* Reduz a altura do terminal em celulares */
-        padding: 15px;
-        font-size: 0.8em; /* Diminui a fonte no terminal */
-    }
-
-    #cursor {
-        font-size: 1.5em; /* Ajusta o tamanho do cursor para telas menores */
-    }
-
-    #output {
-        flex-direction: column; /* Ajusta a saída para não quebrar em telas menores */
-    }
 }
