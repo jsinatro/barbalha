@@ -1,4 +1,3 @@
-<script>
   const canvas = document.getElementById('matrixCanvas');
   const ctx = canvas.getContext('2d');
 
@@ -47,4 +46,3 @@
   function entrar() {
     window.location.href = 'pagina_inicial.html'; // Altere para a URL da primeira página do seu site
   }
-</script>
