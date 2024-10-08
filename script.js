@@ -9,8 +9,8 @@
   const columns = canvas.width / fontSize;
   const drops = Array.from({ length: columns }).map(() => Math.floor(Math.random() * canvas.height / fontSize));
 
-  const chars = "א ב ג ד ה ו ז ח ט י כ ל מ נ ס ע פ צ ק ר ש ת";
-  const names = ["Saraiva", "Alves de Sousa", "Barbalha", "Viardo", "Saraiva", "Vidal de Lima", "Barbalha", "Alves de Sousa", "Silva Caldas"];
+const chars = "בראשית ברא אלהים את השמים ואת הארץ והארץ היתה תהו ובהו וחשך על פני תהום ורוח אלהים מרחפת על פני המים ויאמר אלהים יהי אור ויהי אור וירא אלהים את האור כי טוב ויבדל אלהים בין האור ובין החשך ויקרא אלהים לאור יום ולחשך קרא לילה ויהי ערב ויהי בקר יום אחד ויאמר אלהים יהי רקיע בתוך המים ויהי מבדיל בין מים למים ויעש אלהים את הרקיע ויבדל בין המים אשר מתחת לרקיע ובין המים אשר מעל לרקיע ויהי כן ויקרא אלהים לרקיע שמים ויהי ערב ויהי בקר יום שני ויאמר אלהים יקוו המים מתחת השמים אל מקום אחד ותראה היבשה ויהי כן ויקרא אלהים ליבשה ארץ ולמקוה המים קרא ימים וירא אלהים כי טוב"; 
+const names = ["Saraiva", "Alves de Sousa", "Barbalha", "Viardo", "Saraiva", "Vidal de Lima", "Barbalha", "Alves de Sousa", "Silva Caldas"];
 
   function getRandomChar() {
     return chars[Math.floor(Math.random() * chars.length)];
