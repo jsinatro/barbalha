@@ -9,7 +9,7 @@
   const columns = canvas.width / fontSize;
   const drops = Array.from({ length: columns }).map(() => Math.floor(Math.random() * canvas.height / fontSize));
 
-  const chars = "ア イ ウ エ オ カ キ ク ケ コ サ シ ス セ ソ タ チ ツ テ ト ナ ニ ヌ ネ ノ ハ ヒ フ ヘ ホ マ ミ ム メ モ ヤ ユ ヨ ラ リ ル レ ロ ワ ヲ ン";
+  const chars = "א ב ג ד ה ו ז ח ט י כ ל מ נ ס ע פ צ ק ר ש ת";
   const names = ["Saraiva", "Alves de Sousa", "Barbalha", "Viardo", "Saraiva", "Vidal de Lima", "Barbalha", "Alves de Sousa", "Silva Caldas"];
 
   function getRandomChar() {
