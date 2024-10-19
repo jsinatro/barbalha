@@ -44,5 +44,5 @@ const names = ["Saraiva", "Alves de Sousa", "Barbalha", "Viardo", "Saraiva", "Vi
   });
 
   function entrar() {
-    window.location.href = 'index2.html'; // Altere para a URL da primeira página do seu site
+    window.location.href = 'https://jsinatro.github.io/endogamiabarbalhense'; // Altere para a URL da primeira página do seu site
   }
