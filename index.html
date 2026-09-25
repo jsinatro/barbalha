@@ -3,118 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Endogamia Barbalhense - Arvore Genealogica da Familia Sousa, do Municipio de Barbalha - CE</title>
+    <title>Endogamia Barbalhense</title>
     <style>
-        /* Reset e Iframe */
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #f4f4f9; font-family: sans-serif; }
-        iframe { width: 100%; height: 100%; border: none; display: block; }
-
-        /* Botão Flutuante */
-        #btn-ajuda {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #2c3e50;
-            color: white;
-            border: none;
-            border-radius: 50px;
-            padding: 15px 25px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-            cursor: pointer;
-            z-index: 1000; /* Garante que fique acima da árvore */
-            transition: transform 0.2s;
-        }
-        #btn-ajuda:active { transform: scale(0.95); }
-
-        /* Fundo do Manual (Modal) */
-        #modal-ajuda {
-            display: none; /* Escondido por padrão */
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-color: rgba(0, 0, 0, 0.85); /* Fundo bem escuro para focar no texto */
-            z-index: 2000;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Caixa de Texto do Manual */
-        .conteudo-modal {
-            background-color: white;
-            padding: 30px;
-            border-radius: 12px;
-            max-width: 500px;
-            width: 85%;
-            font-size: 1.1rem;
-            line-height: 1.6;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-            color: #333;
-        }
-        .conteudo-modal h2 { margin-top: 0; color: #2c3e50; font-size: 1.8rem; }
-        .conteudo-modal ul { padding-left: 20px; }
-        .conteudo-modal li { margin-bottom: 15px; }
-
-        /* Botão de Fechar */
-        #btn-fechar {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            margin-top: 25px;
-            background-color: #e74c3c;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-        }
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #f4f4f9; }
+        iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
-
-    <!-- Iframe do Topola -->
-    <iframe src="https://pewu.github.io/topola-viewer/#/view?url=https://jsinatro.github.io/barbalha/barbalha.ged&lang=pt"></iframe>
-
-    <!-- Botão Flutuante -->
-    <button id="btn-ajuda">📖 Ajuda / Como Usar</button>
-
-    <!-- Manual (Modal) -->
-    <div id="modal-ajuda">
-        <div class="conteudo-modal">
-            <h2>Como navegar na árvore</h2>
-            <ul>
-                <li><strong>Mover:</strong> Arraste o dedo pela tela (ou segure o clique do mouse e arraste) para ver o resto da família.</li>
-                <li><strong>Aproximar:</strong> Faça o movimento de pinça com os dedos na tela (ou use a rodinha do mouse) para dar zoom.</li>
-                <li><strong>Ver detalhes:</strong> Toque no nome de qualquer pessoa. Um painel vai abrir no lado direito com os dados de vida.</li>
-                <li><strong>Esconder painel:</strong> Para fechar a barra com as informações de alguém, toque em qualquer lugar em branco da tela.</li>
-            </ul>
-            <button id="btn-fechar">Entendi, fechar manual</button>
-        </div>
-    </div>
-
-    <!-- Script para abrir e fechar o manual -->
-    <script>
-        const btnAjuda = document.getElementById('btn-ajuda');
-        const modal = document.getElementById('modal-ajuda');
-        const btnFechar = document.getElementById('btn-fechar');
-
-        // Abrir
-        btnAjuda.addEventListener('click', () => {
-            modal.style.display = 'flex';
-        });
-
-        // Fechar no botão vermelho
-        btnFechar.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
-
-        // Fechar se a pessoa tocar fora da caixa branca
-        window.addEventListener('click', (event) => {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
-    </script>
+    <iframe src="https://pewu.github.io/topola-viewer/#/view?url=https://jsinatro.github.io/barbalha/barbalha.ged"></iframe>
 </body>
 </html>
